@@ -27,6 +27,9 @@ For B2
 For C1
 For C2
 
+### Contributions 
+Our dataset has a total of 1124 annotated sentences 
+
 ### Problem solving approach
 To create our model we will have to use different features that would potentially increase the accuracy. One popular feature to consider is the “(log) word frequency to text difficulty ratio”. A useful tool for that can be the wordstats text analysis library in Python.
 Another important aspect and feature we need to consider is the cognativity. Cognates are words that are similar in both meaning and form in two languages (example : important-important, reason-raison, etc.) Based on some articles we read, the way around cognates is to simply lower the difficulty level of the sentence in which cognates are found. We can consider cognates as words that are similarly written, but we can encounter “false friends” (words that are written similarly in Botha languages but mean different things). At the moment, we are considering going on with similarly written words as cognates, regardless of the possible differences in meaning, being aware that it can give us false positives in certain cases. We might slightly change our methodology in this aspect, in case some other way to go about this issue comes to our minds in the later stages.
@@ -35,3 +38,6 @@ We plan on solving the problem as a classification. We will model the difficulty
 
 As a main tool, we will be using what we will work on throughout the semester, namely the Google Cloud resources, including AutoML. We still need to get more familiar with the detailed features that are provided there, but we have also gathered different algorithms (for the frequency, similarity, etc.) from the articles we have read, in case we might need some intervention though different tools.
 The more detailed explanations of the modelling and the concrete steps of the problem solving will be provided later on in the proceeding Milestones.
+
+
+## Papers and articles on the topic
