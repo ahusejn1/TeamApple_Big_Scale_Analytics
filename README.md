@@ -1,5 +1,4 @@
-# Big Scale Analytics 2021
-## Group Project
+# Big Scale Analytics 2021 - Group Project
 ## Team Apple
 
 Team members:
