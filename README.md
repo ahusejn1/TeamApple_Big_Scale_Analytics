@@ -25,12 +25,12 @@ First we set specific and precise criteria for each category (A1-C2) and used th
 
 ### Collecting the Data
 For each category we used different types of literature or web pages to extract sentences
-For A1
-For A2
-For B1
-For B2 
-For C1
-For C2
+- For A1
+- For A2
+- For B1
+- For B2 
+- For C1
+- For C2
 
 ### Contributions 
 Our dataset has a total of 1124 annotated sentences 
