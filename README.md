@@ -45,4 +45,12 @@ As a main tool, we will be using what we will work on throughout the semester, n
 The more detailed explanations of the modelling and the concrete steps of the problem solving will be provided later on in the proceeding Milestones.
 
 
+## Relevant datasets 
+- https://french.kwiziq.com/learn/reading
+- https://lingua.com/french/reading/
+- http://www.delfdalf.fr/_media/exemple-1-sujet-complet-dalf-c2-3.pdf
+- https://www.francepodcasts.com/2020/04/14/dalf-c1-comprehension-ecrite/
+- https://www.podcastfrancaisfacile.com/dictee-2/dictee-delf.html
+- https://www.kaggle.com/devicharith/language-translation-englishfrench
+
 ## 📚 Papers and articles on the topic
