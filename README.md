@@ -52,5 +52,21 @@ The more detailed explanations of the modelling and the concrete steps of the pr
 - https://www.francepodcasts.com/2020/04/14/dalf-c1-comprehension-ecrite/
 - https://www.podcastfrancaisfacile.com/dictee-2/dictee-delf.html
 - https://www.kaggle.com/devicharith/language-translation-englishfrench
+- 
 
 ## 📚 Papers and articles on the topic
+- Vlachos, Michalis & Lappas, Theodoros. (2011). "Ranking German Texts by Comprehensibility for Foreign Document Retrieval."
+- Uitdenbogerd, Alexandra. (2005). "Readability of French as a Foreign Language and its Uses." 
+- François, Thomas. (2012). "A readability formula for French as a foreign language"
+- François, Thomas. (2015). "Readability: a one-hundred-year-old field still in his teens"
+- N. Ott. Information retrieval for language learning: An exploration of text difficulty measures
+- A. L. Uitdenbogerd. Web readability and computer-assisted language learning
+
+- https://www.colorincolorado.org/article/using-cognates-develop-comprehension-english
+- https://www.fluentu.com/blog/french/french-cognates/
+- https://www.telc.net/en/about-telc/news/detail/the-secret-life-of-cognates.html
+- http://alumni.cs.ucr.edu/~mvlachos/pubs/ENIR2011.pdf
+- 
+
+## Criteria Grid for each category
+- - http://www.provincedeliege.be/sites/default/files/media/7476/Europass_-_European_language_levels_-_Self_Assessment_Grid.pdf
