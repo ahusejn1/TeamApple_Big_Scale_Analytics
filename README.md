@@ -52,7 +52,7 @@ The more detailed explanations of the modelling and the concrete steps of the pr
 - https://www.francepodcasts.com/2020/04/14/dalf-c1-comprehension-ecrite/
 - https://www.podcastfrancaisfacile.com/dictee-2/dictee-delf.html
 - https://www.kaggle.com/devicharith/language-translation-englishfrench
-- 
+
 
 ## 📚 Papers and articles on the topic
 - Vlachos, Michalis & Lappas, Theodoros. (2011). "Ranking German Texts by Comprehensibility for Foreign Document Retrieval."
