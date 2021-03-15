@@ -25,12 +25,12 @@ First we set specific and precise criteria for each category (A1-C2) and used th
 
 ### 💾 Collecting the Data
 For each category we used different types of literature or web pages to extract sentences
-- For A1
-- For A2
-- For B1
-- For B2 
-- For C1
-- For C2
+- For A1 - provided sentences for educational A1 level & online exams
+- For A2 - provided sentences for educational A2 level & online exams
+- For B1 - provided sentences for educational B1 level & online exams
+- For B2 - articles and educational B2 level 
+- For C1 - specialized articles and & online exams for C1 level (DALF)
+- For C2 - mostly specialized articles or literary work and online exams for C2 level (DALF)
 
 ### 📄 Contributions 
 Our dataset has a total of 1124 annotated sentences 
