@@ -33,7 +33,7 @@ For each category we used different types of literature or web pages to extract 
 - For C2 - mostly specialized articles or literary work and online exams for C2 level (DALF)
 
 ### 📄 Contributions 
-Our dataset has a total of 1124 annotated sentences 
+Our dataset has a total of 1119 annotated sentences 
 
 ### 💭 Problem solving approach
 To create our model we will have to use different features that would potentially increase the accuracy. One popular feature to consider is the “(log) word frequency to text difficulty ratio”. A useful tool for that can be the wordstats text analysis library in Python.
