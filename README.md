@@ -6,7 +6,7 @@ Team members:
 - Bleron Ramaj
 - François Grau
 
-## Project description
+## 🕵🏻‍♂️Project description
 
 You have decided to form a startup called “LingoRank” with two of your University friends and become a millionaire. You have until June to create a proof of concept for your investors. Your startup will revolutionize the way people learn and get better at a foreign language.
 
@@ -17,13 +17,13 @@ To do this would require:
 3. Evaluating how good the model is.
 
 
-## Milestone 1
+## 1️⃣ Milestone 1
 ### First steps
 The first week was mostly spent brainstorming, researching and discussing about the approach to take on how to solve the problem. Each member on his own spent a good amount of time gathering ideas from different articles that can be found in the last section of this document.
 
 First we set specific and precise criteria for each category (A1-C2) and used those criteria to evaluate the texts during our data collection. The criteria grid we used can be found here :
 
-### Collecting the Data
+### 💾 Collecting the Data
 For each category we used different types of literature or web pages to extract sentences
 - For A1
 - For A2
@@ -32,10 +32,10 @@ For each category we used different types of literature or web pages to extract 
 - For C1
 - For C2
 
-### Contributions 
+### 📄 Contributions 
 Our dataset has a total of 1124 annotated sentences 
 
-### Problem solving approach
+### 💭 Problem solving approach
 To create our model we will have to use different features that would potentially increase the accuracy. One popular feature to consider is the “(log) word frequency to text difficulty ratio”. A useful tool for that can be the wordstats text analysis library in Python.
 Another important aspect and feature we need to consider is the cognativity. Cognates are words that are similar in both meaning and form in two languages (example : important-important, reason-raison, etc.) Based on some articles we read, the way around cognates is to simply lower the difficulty level of the sentence in which cognates are found. We can consider cognates as words that are similarly written, but we can encounter “false friends” (words that are written similarly in Botha languages but mean different things). At the moment, we are considering going on with similarly written words as cognates, regardless of the possible differences in meaning, being aware that it can give us false positives in certain cases. We might slightly change our methodology in this aspect, in case some other way to go about this issue comes to our minds in the later stages.
 
@@ -45,4 +45,4 @@ As a main tool, we will be using what we will work on throughout the semester, n
 The more detailed explanations of the modelling and the concrete steps of the problem solving will be provided later on in the proceeding Milestones.
 
 
-## Papers and articles on the topic
+## 📚 Papers and articles on the topic
