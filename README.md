@@ -60,7 +60,7 @@ The more detailed explanations of the modelling and the concrete steps of the pr
 - François, Thomas. (2012). "A readability formula for French as a foreign language"
 - François, Thomas. (2015). "Readability: a one-hundred-year-old field still in his teens"
 - N. Ott. Information retrieval for language learning: An exploration of text difficulty measures
-- A. L. Uitdenbogerd. Web readability and computer-assisted language learning
+- A. L. Uitdenbogerd. Web readability and computer-assisted language learning.
 
 - https://www.colorincolorado.org/article/using-cognates-develop-comprehension-english
 - https://www.fluentu.com/blog/french/french-cognates/
