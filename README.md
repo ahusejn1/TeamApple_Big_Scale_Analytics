@@ -24,13 +24,13 @@ The first week was mostly spent brainstorming, researching and discussing about 
 First we set specific and precise criteria for each category (A1-C2) and used those criteria to evaluate the texts during our data collection. The criteria grid we used can be found here :
 
 ### 💾 Collecting the Data
-For each category we used different types of literature or web pages to extract sentences
-- For A1 - provided sentences for educational A1 level & online exams
-- For A2 - provided sentences for educational A2 level & online exams
-- For B1 - provided sentences for educational B1 level & online exams
-- For B2 - articles and educational B2 level 
-- For C1 - specialized articles and & online exams for C1 level (DALF)
-- For C2 - mostly specialized articles or literary work and online exams for C2 level (DALF)
+For each category we used different types of literature or web pages to extract sentences, you'll fin also the reprensented pourcentage of each category.
+- For A1 16% - provided sentences for educational A1 level & online exams
+- For A2 18% - provided sentences for educational A2 level & online exams
+- For B1 19% - provided sentences for educational B1 level & online exams
+- For B2 16% - articles and educational B2 level 
+- For C1 17% - specialized articles and & online exams for C1 level (DALF)
+- For C2 14% - mostly specialized articles or literary work and online exams for C2 level (DALF)
 
 ### 📄 Contributions 
 Our dataset has a total of 1119 annotated sentences 
