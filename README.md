@@ -32,7 +32,7 @@ For each category we used different types of literature or web pages to extract 
 - For C1 17% - specialized articles and & online exams for C1 level (DALF)
 - For C2 14% - mostly specialized articles or literary work and online exams for C2 level (DALF)
 
-First label were defined based on what the website announce. Then we all individually gave for each sentences which label we thought were the most appropriate. Every member put a different color on label which wasn't right for him. At the end we debate for each label we werent's okay and discussed finding a final label.
+First label were defined based on what the website announce. Then we all individually gave for each sentences which label we thought were the most appropriate. Every member put a different color on label which wasn't right for him. At the end we debate for each label we werent's okay and discussed to agree to decide on a final label.
 
 ### 📄 Contributions 
 Our dataset has a total of 1119 annotated sentences 
