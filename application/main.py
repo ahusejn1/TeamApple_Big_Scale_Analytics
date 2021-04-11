@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
@@ -6,10 +6,11 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/phrase', methods = ['POST'])
 def hello():
-    """Return a friendly HTTP greeting."""
-    return 'Hello World!'
+    text = request.form['phrase']
+    print(phrase)
+    return redirect ('/')
 
 
 if __name__ == '__main__':
