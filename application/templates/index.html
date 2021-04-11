@@ -8,10 +8,12 @@
 
   <h1>Team Apple - French Text Level Classification</h1>
   
-    <form action="/evaluation" method="post">
-      <input type="text" name="phrase"></input>
-      <input type="submit" value="Evaluate"></input>
-    </form>
+  <form action="/evaluate" method="post">
+   <input type="text" name="phrase"></input>
+   <input type="submit" value="Evaluate"></input>
+  </form>
+  <h2> Sentence : {{phrase }}!</h2>
+    
   
 </body>
 </html>
