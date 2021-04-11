@@ -23,7 +23,6 @@ def get_prediction(file_path, model_name):
   response = prediction_client.predict(request)
   return response  # waits until request is returned
 
-  print get_prediction(content, model_name)
 
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
