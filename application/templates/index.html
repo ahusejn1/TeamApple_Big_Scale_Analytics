@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Text Classification - Apple</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <h1>Team Apple - French Text Level Classification</h1>
+  
+    <form action="/evaluation" method="post">
+      <input type="text" name="phrase"></input>
+      <input type="submit" value="Evaluate"></input>
+    </form>
+  
+</body>
+</html>
