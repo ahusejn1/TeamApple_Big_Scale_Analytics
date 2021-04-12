@@ -8,11 +8,15 @@
 
   <h1>Team Apple - French Text Level Classification</h1>
   
-  <form action="/evaluate" method="post">
-   <input type="text" name="phrase"></input>
-   <input type="submit" value="Evaluate"></input>
+  <form action={{ url_for("evaluate")}} method="post">
+   <p>
+    <label for="phrase">Phrase</label>
+    <input type="text" name="phrase">
+    <input type="submit">
+   </p>
   </form>
-  <h2> Sentence : {{ phrase }}</h2>
+  
+  <p>{{ phrase }}</p>
     
   
 </body>
