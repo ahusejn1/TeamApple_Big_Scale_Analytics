@@ -29,10 +29,11 @@ def get_prediction(file_path, model_name):
 # called `app` in `main.py`.
 app = Flask(__name__)
 
-@app.route('/evaluate', methods = ['POST'])
+@app.route('/evaluate', methods = ['GET', 'POST'])
 def evaluate():
-    sentence = request.form['phrase']
-    print(phrase)
+    phrase = ''
+    if request.method == "POST":
+      phrase = request.form.get('phrase')
     return redirect ('/index')
 
 @app.route('/')
