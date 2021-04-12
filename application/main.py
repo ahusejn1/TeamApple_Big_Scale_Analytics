@@ -1,7 +1,7 @@
 import datetime, sys
 import os
-from google.cloud import automl_v1
-from flask import Flask, render_template, jsonify
+from google.cloud import automl_v1, automl
+from flask import Flask, request, render_template, jsonify
 from google.api_core.client_options import ClientOptions
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
@@ -9,8 +9,8 @@ from google.api_core.client_options import ClientOptions
 os.environ['GOOGLE_APPLICATION_CREDENTIALS']='bsakey.json'
 client_options = {'api_endpoint': 'eu-automl.googleapis.com:443'}
 
-project_id = 'unique-grid-305713'
-mpdel_id = 'TCN4988515041545289728'
+project_id = '1033040566143'
+model_id = 'TCN4988515041545289728'
 prediction_client = automl.PredictionServiceClient(client_options=client_options)
 model_full_id = automl.AutoMlClient.model_path(project_id, "eu", model_id)
 
@@ -29,16 +29,16 @@ def index():
 
 @app.route('/evaluate', methods = ['GET', 'POST'])
 def evaluate():
-  phrase = ''
-  if request.method == "POST":
-    phrase = request.form.get('phrase')
-    if phrase != '':
-		niveau = predict(phrase)
-		top_score = niveau.payload[0].classification.score
-		level = niveau.payload[0].display_name
-		phrase = level
-
-  return render_template('index.html', phrase = phrase)
+    phrase = ''
+    if request.method == "POST":
+        phrase = request.form.get('phrase')
+        if phrase != '':
+            niveau = predict(phrase)
+            top_score = niveau.payload[0].classification.score
+            level = niveau.payload[0].display_name
+            phrase = level
+            
+    return render_template('index.html', phrase = phrase)
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
