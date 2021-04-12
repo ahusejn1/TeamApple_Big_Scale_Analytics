@@ -1,23 +1,26 @@
-<html>
-<head>
-  <title>Text Classification - Apple</title>
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-
-  <h1>Team Apple - French Text Level Classification</h1>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type=text/javascript>
+			$(function() {
+			  $('a#process_input').bind('click', function() {
+				$.getJSON('/evaluate', {
+				  proglang: $('input[name="proglang"]').val(),
+				}, function(data) {
+				  $("#result").text(data.result);
+				});
+				return false;
+			  });
+			});
+		</script>
+	</head>
   
-  <form action={{ url_for("evaluate")}} method="post">
-   <p>
-    <label for="phrase">Phrase</label>
-    <input type="text" name="phrase">
-    <input type="submit">
-   </p>
-  </form>
-  
-  <p>{{ phrase }}</p>
-    
-  
-</body>
-</html>
+	<body>
+		<div class='container'>
+		<h3>Write a sentence</h3>
+			<form>
+				<input type=text size=5 name=proglang>
+				<a href=# id=process_input><button class='btn btn-default'>Submit</button></a>
+			</form>
+		<p id=result></p>
+		</div>
+	</body>
