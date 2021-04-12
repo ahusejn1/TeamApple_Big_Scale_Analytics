@@ -23,11 +23,8 @@ def predict(content):
 
 app = Flask(__name__)
 
-@app.route('/index/')
-def index():
-	return render_template('index.html')
 
-@app.route('/evaluate', methods = ['GET', 'POST'])
+@app.route('/', methods = ['GET', 'POST'])
 def evaluate():
     phrase = ''
     if request.method == "POST":
