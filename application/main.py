@@ -4,12 +4,15 @@ from google.cloud import automl_v1
 from flask import Flask, render_template
 from google.api_core.client_options import ClientOptions
 
+
+
 def inline_text_payload(file_path):
   with open(file_path, 'rb') as ff:
     content = ff.read()
   return {'text_snippet': {'content': content, 'mime_type': 'text/plain'} }
 
-
+app = Flask(__name__)
+@app.route('/evaluate', methods = ['GET', 'POST'])
 def get_prediction(file_path, model_name):
   options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
   prediction_client = automl_v1.PredictionServiceClient(client_options=options)
@@ -27,15 +30,15 @@ def get_prediction(file_path, model_name):
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
+'''
 app = Flask(__name__)
-
 @app.route('/evaluate', methods = ['GET', 'POST'])
 def evaluate():
     phrase = ''
     if request.method == "POST":
       phrase = request.form.get('phrase')
     return redirect ('/index')
-
+'''
 @app.route('/')
 def root():
     return render_template('index.html')
