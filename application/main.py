@@ -17,9 +17,11 @@ def evaluate():
   phrase = ''
   if request.method == "POST":
     phrase = request.form.get('phrase')
-    niveau = predict.predict(phrase)
-    top_score = niveau.payload[0].display_name
-  return render_template('index.html', phrase = top_score)
+    niveau = predict(phrase)
+    top_score = niveau.payload[0].classification.score
+    level = niveau.payload[0].display_name
+
+  return render_template('index.html', phrase = level)
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
