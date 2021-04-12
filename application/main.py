@@ -1,5 +1,5 @@
 import datetime, sys
-
+import os
 from google.cloud import automl_v1
 from flask import Flask, render_template, jsonify
 from google.api_core.client_options import ClientOptions
@@ -20,12 +20,6 @@ def predict(content):
   response = prediction_client.predict(name=model_full_id, payload=payload)
   return response
 
-y = predict('Salut')
-
-top_score = y.payload[0].classification.score
-top_cat = y.payload[0].display_name
-
-print(topcat + '& ' + top_score)
 
 app = Flask(__name__)
 
@@ -38,10 +32,11 @@ def evaluate():
   phrase = ''
   if request.method == "POST":
     phrase = request.form.get('phrase')
-    niveau = predict(phrase)
-    top_score = niveau.payload[0].classification.score
-    level = niveau.payload[0].display_name
-    phrase = level
+    if phrase != '':
+		niveau = predict(phrase)
+		top_score = niveau.payload[0].classification.score
+		level = niveau.payload[0].display_name
+		phrase = level
 
   return render_template('index.html', phrase = phrase)
 
