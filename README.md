@@ -46,11 +46,13 @@ We plan on solving the problem as a classification. We will model the difficulty
 As a main tool, we will be using what we will work on throughout the semester, namely the Google Cloud resources, including AutoML. We still need to get more familiar with the detailed features that are provided there, but we have also gathered different algorithms (for the frequency, similarity, etc.) from the articles we have read, in case we might need some intervention though different tools.
 The more detailed explanations of the modelling and the concrete steps of the problem solving will be provided later on in the proceeding Milestones.
 
-## 2️⃣ Milestone 1
+## 2️⃣ Milestone 2
 
 For this second part of the group project, we decided to use google cloud. Among the different possibilities offered by this platform we have focused on the "Natural Language". This module allowed us to upload our database containing French sentences with their respective level in order to be able to apply a text classification using AutoML. Once the model is created, it is possible to predict the level of difficulty of a randomly written sentence on the google cloud platform.
 
 Once the prediction model has been created and tested. We used another module offered by google cloud called APP Engine. This module allowed us to create an API which will aim to link, thanks to the FLASK library, a User Interface with the web service. This User Interface will aim for any user to be able to enter a sentence in French in order to obtain the level of difficulty of this same phrase on the basis of the model offered by google cloud.
+
+https://unique-grid-305713.ew.r.appspot.com
 
 
 ## Relevant datasets 
