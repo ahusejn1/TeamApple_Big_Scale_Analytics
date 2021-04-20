@@ -1,23 +1,28 @@
-
+<<!DOCTYPE html>
 <html>
-<head>
-  <title>Text Classification - Apple</title>
-</head>
-<body>
-
-  <h1>Team Apple - French Text Level Classification</h1>
-  
-  <form action={{ url_for("evaluate")}} method="post">
-   <p>
-    <label for="phrase">Phrase</label>
-    <input type="text" name="phrase">
-    <input type="submit">
-    <a href=# id=process_input><button class='btn btn-default'>Submit</button></a>
-   </p>
-  </form>
-  
-  <p>{{ phrase }}</p>
-    
-  
-</body>
+  <head>
+    <title>Team Apple - French text classification</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"
+  </head>
+  <body data-new-gr-c-s-check-loaded="8.872.0" data-gr-ext-installed="">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 style="text-align: center; color: #3f7320;">French text level</h1>
+          <hr>
+          <h1>Team Apple</h1>
+          <h4>
+          Write a sentence
+          </h4>
+          <form action="{{" url_for("root")}}="" method="POST">
+            <textarea name="textinput" rows="8" cols="80">Write a sentence here</textarea>
+            <br>
+            <input type="submit" value="Test">
+          </form
+        </div>
+        <p>{{result}}</p>
+      </div>
+    </div>
+  </body>
 </html>
