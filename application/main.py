@@ -4,38 +4,30 @@ from google.cloud import automl_v1, automl
 from flask import Flask, request, render_template, jsonify
 from google.api_core.client_options import ClientOptions
 
-# If `entrypoint` is not defined in app.yaml, App Engine will look for an app
-# called `app` in `main.py`.
-os.environ['GOOGLE_APPLICATION_CREDENTIALS']='bsakey.json'
-client_options = {'api_endpoint': 'eu-automl.googleapis.com:443'}
-
-project_id = '1033040566143'
-model_id = 'TCN4988515041545289728'
-prediction_client = automl.PredictionServiceClient(client_options=client_options)
-model_full_id = automl.AutoMlClient.model_path(project_id, "eu", model_id)
-
-def predict(content):
-  text_snippet = automl.TextSnippet(content=content, mime_type= "text/plain")
-  payload = automl.ExamplePayload(text_snippet=text_snippet)
-  response = prediction_client.predict(name=model_full_id, payload=payload)
-  return response
-
-
 app = Flask(__name__)
+
+def predict(input, model_name):
+  options = ClientOptions(api_endpoint='eu-automl.googleapis.com')
+  prediction_client = automl_v1.PredictionServiceClient(client_options=options)
+
+  payload = {'text_snippet': {'content': input, 'mime_type': 'text/plain'} }
+  params = {}
+  automl_request = automl_v1.PredictRequest(name=model_name, payload=payload, params=params)
+  automl_response = prediction_client.predict(automl_request)
+  return automl_response
+
 
 
 @app.route('/', methods = ['GET', 'POST'])
-def evaluate():
-    phrase = ''
+def root():
+    form_data = ''
+    difficulty = ''
     if request.method == "POST":
-        phrase = request.form.get('phrase')
-        if phrase != '':
-            niveau = predict(phrase)
-            top_score = niveau.payload[0].classification.score
-            level = niveau.payload[0].display_name
-            phrase = level
-            
-    return render_template('index.html', phrase = phrase)
+        form_data = request.form.get('textinput')
+        difficulty = predict(form_data, 'projects/1033040566143/locations/eu/operations/TCN4074046822677479424')
+        result = difficulty
+    return render_template('index.html', result = result, text=form_data)
+
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
