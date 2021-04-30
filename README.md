@@ -65,8 +65,7 @@ Once the prediction model has been created and tested. We used another module of
 
 ### 📄 Evaluation model
 
-Precision : 62%
-Recall :    27,93%
+Precision : 62% // Recall :    27,93%
 
 Link to our API : https://unique-grid-305713.ew.r.appspot.com
 
