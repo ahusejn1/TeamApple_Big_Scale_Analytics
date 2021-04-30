@@ -52,7 +52,18 @@ For this second part of the group project, we decided to use google cloud. Among
 
 Once the prediction model has been created and tested. We used another module offered by google cloud called APP Engine. This module allowed us to create an API which will aim to link, thanks to the FLASK library, a User Interface with the web service. This User Interface will aim for any user to be able to enter a sentence in French in order to obtain the level of difficulty of this same phrase on the basis of the model offered by google cloud.
 
-https://unique-grid-305713.ew.r.appspot.com
+### 📄 Confusion Matrix
+
+|   | A1  | A2  | B1  | B2  | C1  | C2  |
+|---|---|---|---|---|---|---|
+| A1  | 78%  | 11%  | 6%  | 6%  | -  | -  |
+| A2  | 42%  | 53%  | -  | -  | -  | 5%  |
+| B1  | 14%  | 18%  | 41%  | 5%  | 18%  | 5%  |
+| B2  | 6%  | 6%  | 18%  | 29%  | 29%  | 12%  |
+| C1  | 5%  | 16%  | 16%  | 11%  | 37%  | 16%  |
+| C2  | 6%  | -  | 6%  | 6%  | -  | 81%  |
+
+Link to our API : https://unique-grid-305713.ew.r.appspot.com
 
 
 ## Relevant datasets 
