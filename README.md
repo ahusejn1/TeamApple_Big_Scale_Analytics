@@ -4,7 +4,7 @@
 Team members:
 - Agon Husejni
 - Bleron Ramaj
-- François Gra
+- François Grau
 
 ## 🕵🏻‍♂️Project description
 
