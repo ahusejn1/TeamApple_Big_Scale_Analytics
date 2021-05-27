@@ -112,6 +112,7 @@ Link to our API : https://unique-grid-305713.ew.r.appspot.com
 - https://www.fluentu.com/blog/french/french-cognates/
 - https://www.telc.net/en/about-telc/news/detail/the-secret-life-of-cognates.html
 - http://alumni.cs.ucr.edu/~mvlachos/pubs/ENIR2011.pdf
+- https://cental.uclouvain.be/cefrlex/flelex
  
 
 ## Criteria Grid for each category
