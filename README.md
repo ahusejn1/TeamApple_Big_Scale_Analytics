@@ -28,7 +28,9 @@ Here is the link to our web application : https://unique-grid-305713.ew.r.appspo
 
 ### How to use them ?
 
-It's very simple. There is a text box below "Write a sentence", just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
+It's very simple. 
+
+There is a text box below "Write a sentence", just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
 
 To calculate the level of the sentence, click on "Test".
 
