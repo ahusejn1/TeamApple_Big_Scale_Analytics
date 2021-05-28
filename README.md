@@ -54,7 +54,7 @@ Once the prediction model has been created and tested. We used another module of
 
 ### 🔁 1st Iteration
 
-We have imported the raw data, without modification.
+We have imported the raw data in AutoML Google Cloud, without modification.
 
 Confusion Matrix
 
@@ -72,6 +72,13 @@ Evaluation model
 Precision : 62% // Recall :    27,93%
 
 ### 🔁 2nd Iteration
+
+In our 2nd iteration, we performed some basic modifications on the raw data. Here are the tasks we did:
+
+ - Transformation of upper case letters into lower case letters
+ - Removal of punctuation
+ - Removal of numbers
+ - Lemmatization
 
 Confusion Matrix
 
