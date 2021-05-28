@@ -26,7 +26,7 @@ To build our web application, we used Google services, namely App Engine. The Go
 
 Here is the link to our web application : https://unique-grid-305713.ew.r.appspot.com
 
-### How to use them ?
+### How to use them ?
 
 It's very simple. There is a text box below "Write a sentence", just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
 
