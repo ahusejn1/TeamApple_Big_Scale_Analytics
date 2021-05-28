@@ -16,6 +16,26 @@ To do this would require:
 2. Building a model that predicts the difficulty/level of a new text,
 3. Evaluating how good the model is.
 
+## ☁️ Web Application
+
+In order to make our solution available to everyone, we decided to create a web application. 
+
+It will be possible to type a sentence in a text field and predict the difficulty level of this sentence. The level of accuracy will also be displayed. 
+
+To build our web application, we used Google services, namely App Engine. The Google documentation was necessary to educate us.
+
+Here is the link to our web application : https://unique-grid-305713.ew.r.appspot.com
+
+### How to use them ?
+
+It's very simple. There is a text box below "Write a sentence", just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
+
+To calculate the level of the sentence, click on "Test".
+
+The web application will then return the level of the sentence (example: A1).
+
+We told you, it's very simple. 😉😉
+
 
 ## 1️⃣ Milestone 1
 ### First steps
@@ -96,9 +116,6 @@ Confusion Matrix
 Evaluation model
 
 Precision : 82,14% // Recall : 21,1%
-
-Link to our API : https://unique-grid-305713.ew.r.appspot.com
-
 
 ## Relevant datasets 
 - https://french.kwiziq.com/learn/reading
