@@ -36,7 +36,10 @@ To calculate the level of the sentence, click on "Test".
 
 The web application will then return the level of the sentence (example: A1).
 
-We told you, it's very simple. 😉😉
+We told you, it's very simple 😉😉
+
+### How to deploy it ?
+
 
 
 ## 1️⃣ Milestone 1
