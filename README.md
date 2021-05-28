@@ -80,6 +80,8 @@ In our 2nd iteration, we performed some basic modifications on the raw data. Her
  - Removal of numbers
  - Lemmatization
 
+Then, we imported the data into AutoML to build the model. 
+
 Confusion Matrix
 
 |   | A1  | A2  | B1  | B2  | C1  | C2  |
