@@ -103,7 +103,7 @@ Once the prediction model has been created and tested. We used another module of
 
 ### 🔁 1st Iteration
 
-We have imported the raw data in AutoML Google Cloud, without modification.
+We have imported the raw data in *AutoML*, without modification.
 
 Confusion Matrix
 
@@ -129,7 +129,7 @@ In our 2nd iteration, we performed some basic modifications on the raw data. Her
  - Removal of numbers
  - Lemmatization
 
-Then, we imported the data into AutoML to build the model. 
+Then, we imported the data into *AutoML* to build the model. 
 
 Confusion Matrix
 
