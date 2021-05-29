@@ -118,9 +118,21 @@ For example, let's say we have 2000 training examples that we are going to use. 
 Below, we find the result of the first iteration, which consisted in uploading into the model dataset train provided on AIcrowd of 4800 lines. In order to allow the model to be able to finish its run and obtain these results, we have taken the decision to proportionally reduce (that is to say by increasing the same proportion of data from the different levels) these 4800 lines into 1200 lines.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" />
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" />
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" width="200" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.2.png" width="250" height="200"/>
 </p>
+
+  - The general accuracy of the model is 48%
+  - As we can see, on the summary of the results of precision, recall and F1, it is important to note that for the score 5 which corresponds to level C2, the model is not able to predict data.
+  - For level 0 and 2 (A1 and B1), the model is quite goodbecause we can see a balanced balance between precision, recall and F1.
+
+###### 🔁 2nd iteration
+
+This second test consisted of uploading into the model the same dataset train as the first iterations, therefore the dataset of 1200 lines.
+
+the only element on which we tried to play in order to obtain a better precision was the Batch size. Indeed, having reduced the size of the dataset by 75%, we said to ourselves that it was justifiable to reduce the size of the Batch as well. We therefore decided to run an iteration with a batch size reduced to 5.
+
+
 
 ### *AutoML model*
 ###### 🔁 1st iteration
