@@ -49,8 +49,8 @@ As for App Engine, it allowed us to make it available to everyone. The <a href="
 -	Main.py
 -	App.yaml
 -	Requirements.txt
--	Dossier « application » contenant script.js et style.css
--	Dossier « templates » contenant index.html
+-	*Application* folder containing script.js et style.css
+-	*Templates* folder containing index.html
 
 Le fichier « main.py » contient l’API de Natural Language qui fait le lien à notre de prédiction. 
 
