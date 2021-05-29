@@ -144,7 +144,10 @@ the only element on which we tried to play in order to obtain a better precision
 
 For this third, we decided to upload another dataset which is the one used for the other iterations to which we applied the preprocessing explained in the corresponding part.
 
-
+<p align="center">
+  <img src="" width="230" height="150"//>
+  <img src="" width="250" height="200"/>
+</p>
 
   - The general accuracy of the model is 60%
   - Batch size 5 and Epoch 3
