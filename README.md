@@ -118,7 +118,7 @@ Confusion Matrix
  
 Evaluation model
 
-Accuracy : 52% // Precision : 62% // Recall :    27,93%
+Accuracy : 52% // Precision : 62% // Recall :    28%
 
 ### 🔁 2nd Iteration
 
