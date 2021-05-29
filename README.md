@@ -118,7 +118,8 @@ For example, let's say we have 2000 training examples that we are going to use. 
 Below, we find the result of the first iteration, which consisted in uploading into the model dataset train provided on AIcrowd of 4800 lines. In order to allow the model to be able to finish its run and obtain these results, we have taken the decision to proportionally reduce (that is to say by increasing the same proportion of data from the different levels) these 4800 lines into 1200 lines.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/apple-think-diff.svg" />
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" />
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" />
 </p>
 
 ### *AutoML model*
