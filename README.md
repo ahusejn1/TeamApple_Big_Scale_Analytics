@@ -52,9 +52,17 @@ As for App Engine, it allowed us to make it available to everyone. The <a href="
 -	*Application* folder containing script.js et style.css
 -	*Templates* folder containing index.html
 
-Le fichier « main.py » contient l’API de Natural Language qui fait le lien à notre de prédiction. 
+The *main.py* file contains the Natural Language API that links to our prediction.
 
 ### How does our solution works ?
+
+To deploy the web application, you need to run the command "gcloud app deploy" from the root directory of the project, where the App.yaml file is located:
+
+gcloud app delpoy
+
+To launch the browser and access the web application, you need to enter the following command: 
+
+gcloud app browse
 
 
 ## 1️⃣ Milestone 1
