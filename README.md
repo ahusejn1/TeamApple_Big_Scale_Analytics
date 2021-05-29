@@ -1,4 +1,9 @@
 # Big Scale Analytics 2021 - Group Project
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/202px-Apple_logo_black.svg.png" />
+</p>
+
 ## Team Apple 
 
 Team members:
@@ -145,6 +150,26 @@ Confusion Matrix
 Evaluation model
 
 Precision : 82,14% // Recall : 21,1%
+
+## 👨🏻‍💻 Team work repartition
+
+Agon
+ - Text cleaning and prepocessing
+ - UI dealing
+ - Personnalized model
+ - ReadMe contributor
+
+Bleron
+ - Google Auto-ML manager
+ - App Engine handling
+ - Cognates issue solving
+ - ReadMe contributor
+
+François
+ - Literature research
+ - UI builder
+ - CamenBERT model
+ - Reade contributor
 
 ## Relevant datasets 
 - https://french.kwiziq.com/learn/reading
