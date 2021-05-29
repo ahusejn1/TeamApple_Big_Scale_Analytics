@@ -81,7 +81,11 @@ In order to be able to lead this project correctly, it was necessary to work it 
 
 ## Predictive models
 
-### *CamemBERT model*
+### Personnalized model
+
+XXXXXXXXXXXXXXXXXXXXXXXXx
+
+### *CamemBERT* model
 
 After experimenting with the two previous models, we found it interesting to experiment with a third one, which also represented an opportunity to improve precision.
 
@@ -152,8 +156,6 @@ For this third, we decided to upload another dataset which is the one used for t
   - The general accuracy of the model is 60%
   - Batch size 5 and Epoch 3
   - This improvement is principally due to the fact that for the value 1 (corresponding to level A2), we obtain scores contrary to the 2nd iteration.
-
-
 
 ### *AutoML model*
 ###### 🔁 1st iteration
