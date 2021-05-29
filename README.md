@@ -1,7 +1,7 @@
 # Big Scale Analytics 2021 - Group Project
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/202px-Apple_logo_black.svg.png" />
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/apple-think-diff.svg" />
 </p>
 
 ## Team Apple 
@@ -150,6 +150,10 @@ Confusion Matrix
 Evaluation model
 
 Precision : 82,14% // Recall : 21,1%
+
+## AICrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="20" height="20">
+
+In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the the AICrowd results of these models in order to make the final choice of the kept model.
 
 ## 👨🏻‍💻 Team work repartition
 
