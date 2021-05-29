@@ -22,8 +22,6 @@ In order to make our solution available to everyone, we decided to create a web 
 
 It will be possible to type a sentence in a text field and predict the difficulty level of this sentence. The level of accuracy will also be displayed. 
 
-To build our web application, we used Google services, namely App Engine. The Google documentation was necessary to educate us.
-
 Here is the link to our web application : https://unique-grid-305713.ew.r.appspot.com
 
 ### How to use them ?
