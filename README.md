@@ -8,7 +8,7 @@ Team members:
 
 ## 🕵🏻‍♂️Project description
 
-You have decided to form a startup called “LingoRank” with two of your University friends and become a millionaire. You have until June to create a proof of concept for your investors. Your startup will revolutionize the way people learn and get better at a foreign language.
+You have decided to form a startup called *LingoRank* with two of your University friends and become a millionaire. You have until June to create a proof of concept for your investors. Your startup will revolutionize the way people learn and get better at a foreign language.
 
 To improve one’s skills in a new foreign language, it is important to read texts in that language. These text have to be at the reader’s language level. However, it is difficult to find texts that are close to someone’s knowledge level (A1 to C2). You have decided to build a model for English speakers that predicts the difficulty of a French written text. This can be then used, e.g., in a recommendation system, to recommend texts (for example, recent news articles) that are appropriate for someone’s language level. If someone is at A1 French level, it is inappropriate to present a text at B2 level, as she won’t be able to understand it. Ideally, a text should have many known words and may have a few words that are unknown so that the person can improve.
 To do this would require:
@@ -38,11 +38,11 @@ We told you, it's very simple 😉😉
 
 ### How does our solution works ?
 
-Our solution was created with the different tools offered by Google, namely Natural Language and App Engine.
+Our solution was created with the different tools offered by *Google*, namely *Natural Language* and *App Engine*.
 
-Natural Language allowed us to train our dataset and build our predictive model. It is also possible to retrieve the API of this module.
+*Natural Language* allowed us to train our dataset and build our predictive model. It is also possible to retrieve the API of this module.
 
-Thanks to App Engine, it allowed us to make it available to everyone. The <a href="https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service" target="_blank">Google Documentation</a> helped us to create the base of our web application. Our web application is composed of the following files:
+Thanks to *App Engine*, it allowed us to make it available to everyone. The <a href="https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service" target="_blank">Google Documentation</a> helped us to create the base of our web application. Our web application is composed of the following files:
 
 -	Main.py
 -	App.yaml
@@ -50,7 +50,7 @@ Thanks to App Engine, it allowed us to make it available to everyone. The <a hre
 -	*Application* folder containing script.js et style.css
 -	*Templates* folder containing index.html
 
-The *main.py* file contains the Natural Language API that links to our prediction.
+The *main.py* file contains the *Natural Language* API that links to our prediction.
 
 ### How to deploy it ?
 
