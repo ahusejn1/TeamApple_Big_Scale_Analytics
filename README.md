@@ -54,7 +54,7 @@ As for App Engine, it allowed us to make it available to everyone. The <a href="
 
 The *main.py* file contains the Natural Language API that links to our prediction.
 
-### How does our solution works ?
+### How to deploy it ?
 
 To deploy the web application, you need to run the command "gcloud app deploy" from the root directory of the project, where the App.yaml file is located:
 
