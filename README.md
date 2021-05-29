@@ -71,42 +71,58 @@ To launch the browser and access the web application, you need to enter the foll
 gcloud app browse
 ```
 
-## 1️⃣ Milestone 1
-### First steps
-The first week was mostly spent brainstorming, researching and discussing about the approach to take on how to solve the problem. Each member on his own spent a good amount of time gathering ideas from different articles that can be found in the last section of this document.
+## Milestones
 
-First we set specific and precise criteria for each category (A1-C2) and used those criteria to evaluate the texts during our data collection. The criteria grid we used can be found here :
+In order to be able to lead this project correctly, it was necessary to work it in 3 milestones director:
 
-### 💾 Collecting the Data
-For each category we used different types of literature or web pages to extract sentences, you'll fin also the reprensented pourcentage of each category.
-- For A1 16% - provided sentences for educational A1 level & online exams
-- For A2 18% - provided sentences for educational A2 level & online exams
-- For B1 19% - provided sentences for educational B1 level & online exams
-- For B2 16% - articles and educational B2 level 
-- For C1 17% - specialized articles and & online exams for C1 level (DALF)
-- For C2 14% - mostly specialized articles or literary work and online exams for C2 level (DALF)
+  1. The first step was mostly spent brainstorming, researching and discussing about the approach to take on how to solve the problem. Develop a model of the general objective, collect the necessary data (French sentences with their associated level ranging from A1 to C1).
+  2. For this second part of the group project, we decided to use *Google Cloud*. The *Natural Language* module allowed us to upload our database containing Frenc sentences with their respective level in order to be able to apply text classification using *AutoML*. The aim was to link this service to an endpoint which will be able to predict the difficulty of an entry text.
+  3. Work on the data (pre-processing, tackle cognates, etc...) find other ways to improve the model.
 
-First label were defined based on what the website announce. Then we all individually gave for each sentences which label we thought were the most appropriate. Every member put a different color on label which wasn't right for him. At the end we debate for each label we werent's okay and discussed to agree to decide on a final label.
+## Predictive models
 
-### 📄 Contributions 
-Our dataset has a total of 1119 annotated sentences 
+### *CamemBERT model*
 
-### 💭 Problem solving approach
-To create our model we will have to use different features that would potentially increase the accuracy. One popular feature to consider is the “(log) word frequency to text difficulty ratio”. A useful tool for that can be the wordstats text analysis library in Python.
-Another important aspect and feature we need to consider is the cognativity. Cognates are words that are similar in both meaning and form in two languages (example : important-important, reason-raison, etc.) Based on some articles we read, the way around cognates is to simply lower the difficulty level of the sentence in which cognates are found. We can consider cognates as words that are similarly written, but we can encounter “false friends” (words that are written similarly in Botha languages but mean different things). At the moment, we are considering going on with similarly written words as cognates, regardless of the possible differences in meaning, being aware that it can give us false positives in certain cases. We might slightly change our methodology in this aspect, in case some other way to go about this issue comes to our minds in the later stages.
+After experimenting with the two previous models, we found it interesting to experiment with a third one, which also represented an opportunity to improve precision.
 
-We plan on solving the problem as a classification. We will model the difficulty of entire sentences, however, for special cases, like cognates, we might consider building a separate service to take into account special words and probably break them down into tokens. In the final solution we will  combine the outputs of the different analytics.
+Our choice on the model calle *CamemBERT*
 
-As a main tool, we will be using what we will work on throughout the semester, namely the Google Cloud resources, including AutoML. We still need to get more familiar with the detailed features that are provided there, but we have also gathered different algorithms (for the frequency, similarity, etc.) from the articles we have read, in case we might need some intervention though different tools.
-The more detailed explanations of the modelling and the concrete steps of the problem solving will be provided later on in the proceeding Milestones.
+###### Why this choice ?
 
-## 2️⃣ Milestone 2
+*CamemBERT* is a tool that allows you to determine, based on written data based on text written in natural language, the feeling it returns. This very used model at first glance makes perfect sense when you know that it is pre-trained on 138GB of French text.
 
-For this second part of the group project, we decided to use google cloud. Among the different possibilities offered by this platform we have focused on the "Natural Language". This module allowed us to upload our database containing French sentences with their respective level in order to be able to apply a text classification using AutoML. Once the model is created, it is possible to predict the level of difficulty of a randomly written sentence on the google cloud platform.
+*CamemBERT* chooses the words to be predicted dynamically, that is to stay, not during the pre-processing of the input data, but during forward pass, by randomly masking certain words in a sequence.
 
-Once the prediction model has been created and tested. We used another module offered by google cloud called APP Engine. This module allowed us to create an API which will aim to link, thanks to the FLASK library, a User Interface with the web service. This User Interface will aim for any user to be able to enter a sentence in French in order to obtain the level of difficulty of this same phrase on the basis of the model offered by google cloud.
+###### Putting the model into practice
 
-### 🔁 1st Iteration
+As for each model, we therefore decide to do three iterations of the model while trying to improve its precision. However, we faced a complication. Indeed, we have run our pie chart model on *Google Colab*. Our very first iteration, unfortunately, could not be completed, because not having enough resources on *Google Colab*, the model could not finish its run.
+
+Within the models, the difficulty levels have been converted into numbers with the following coresspondence:
+
+  - A1 = 0
+  - A2 = 1
+  - B1 = 2
+  - B2 = 3
+  - C1 = 4
+  - C2 = 5
+  
+Finally, it is important to mention that this template contains two parameters to configure which are as follows :
+
+  - Batch size: number of examples analyzed by the model during an iteration. The larger the batch size, the more memory it consumes.
+  - Epoch: expression to say how many times the model should cycle through all the training data. An epoch can contain multiple iterations. The number of iterations depends on the batch size.
+
+For example, let's say we have 2000 training examples that we are going to use. We can divide the dataser of 2000 examples into batches of 500 then it will take 4 iterations to complete 1 epoch.
+
+###### 🔁 1st iteration
+
+Below, we find the result of the first iteration, which consisted in uploading into the model dataset train provided on AIcrowd of 4800 lines. In order to allow the model to be able to finish its run and obtain these results, we have taken the decision to proportionally reduce (that is to say by increasing the same proportion of data from the different levels) these 4800 lines into 1200 lines.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/apple-think-diff.svg" />
+</p>
+
+### *AutoML model*
+###### 🔁 1st iteration
 
 We have imported the raw data in *AutoML*, without modification.
 
@@ -125,7 +141,7 @@ Evaluation model
 
 Accuracy : 52% // Precision : 62% // Recall :    28%
 
-### 🔁 2nd Iteration
+###### 🔁 2nd Iteration
 
 In our 2nd iteration, we performed some basic modifications on the raw data. Here are the tasks we did:
 
@@ -151,9 +167,9 @@ Evaluation model
 
 Precision : 82,14% // Recall : 21,1%
 
-## AICrowd <img src="https://user-images.githubusercontent.com/74456180/117639815-a1021600-b184-11eb-9ba3-46607da15789.png" width="20" height="20">
+## AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/brwzrtijgulc12ow1ohb.png" width="25" height="25">
 
-In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the the AICrowd results of these models in order to make the final choice of the kept model.
+In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the *AIcrowd* results of these models in order to make the final choice of the kept model.
 
 ## 👨🏻‍💻 Team work repartition
 
@@ -161,19 +177,19 @@ Agon
  - Text cleaning and prepocessing
  - UI dealing
  - Personnalized model
- - ReadMe contributor
+ - *ReadMe* contributor
 
 Bleron
- - Google Auto-ML manager
- - App Engine handling
+ - *Google Auto-ML* manager
+ - *App Engine* handling
  - Cognates issue solving
- - ReadMe contributor
+ - *ReadMe* contributor
 
 François
  - Literature research
  - UI builder
- - CamenBERT model
- - Reade contributor
+ - *CamenBERT* model
+ - *ReadMe* contributor
 
 ## Relevant datasets 
 - https://french.kwiziq.com/learn/reading
