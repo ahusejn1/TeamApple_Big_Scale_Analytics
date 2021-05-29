@@ -1,5 +1,5 @@
 # Big Scale Analytics 2021 - Group Project
-## Team Apple
+## Team Apple 
 
 Team members:
 - Agon Husejni
