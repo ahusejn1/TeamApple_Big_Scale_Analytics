@@ -28,9 +28,9 @@ Here is the link to our web application : https://unique-grid-305713.ew.r.appspo
 
 It's very simple. 
 
-There is a text box below "Write a sentence", just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
+There is a text box below *Write a sentence*, just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
 
-To calculate the level of the sentence, click on "Test".
+To calculate the level of the sentence, click on *Test*.
 
 The web application will then return the level of the sentence (example: A1).
 
