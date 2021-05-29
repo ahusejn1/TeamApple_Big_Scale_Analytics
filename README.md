@@ -42,7 +42,7 @@ Our solution was created with the different tools offered by Google, namely Natu
 
 Natural Language allowed us to train our dataset and build our predictive model. It is also possible to retrieve the API of this module.
 
-As for App Engine, it allowed us to make it available to everyone. The <a href="https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service" target="_blank">Google Documentation</a> helped us to create the base of our web application. Our web application is composed of the following files:
+Thanks to App Engine, it allowed us to make it available to everyone. The <a href="https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service" target="_blank">Google Documentation</a> helped us to create the base of our web application. Our web application is composed of the following files:
 
 -	Main.py
 -	App.yaml
