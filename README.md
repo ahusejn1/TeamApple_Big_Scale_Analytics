@@ -59,7 +59,7 @@ The *main.py* file contains the Natural Language API that links to our predictio
 To deploy the web application, you need to run the command "gcloud app deploy" from the root directory of the project, where the App.yaml file is located:
 
 ```bash
-gcloud app delpoy
+gcloud app deploy
 ``` 
 
 To launch the browser and access the web application, you need to enter the following command: 
