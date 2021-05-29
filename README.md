@@ -118,7 +118,7 @@ For example, let's say we have 2000 training examples that we are going to use. 
 Below, we find the result of the first iteration, which consisted in uploading into the model dataset train provided on AIcrowd of 4800 lines. In order to allow the model to be able to finish its run and obtain these results, we have taken the decision to proportionally reduce (that is to say by increasing the same proportion of data from the different levels) these 4800 lines into 1200 lines.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" width="200" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.1.png" width="230" height="150"//>
   <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/1.2.png" width="250" height="200"/>
 </p>
 
@@ -131,6 +131,27 @@ Below, we find the result of the first iteration, which consisted in uploading i
 This second test consisted of uploading into the model the same dataset train as the first iterations, therefore the dataset of 1200 lines.
 
 the only element on which we tried to play in order to obtain a better precision was the Batch size. Indeed, having reduced the size of the dataset by 75%, we said to ourselves that it was justifiable to reduce the size of the Batch as well. We therefore decided to run an iteration with a batch size reduced to 5.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/2.1.png" width="230" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/2.2.png" width="250" height="200"/>
+</p>
+
+  - The general accuracy of the model is 59%
+  - The results of this iteration shows us that for the value 1 (corresponding to level A2), unfortunately we have no precision, no recall as well as a F1 score of 0. However, for the rest of values (A1, B1, B2, C1, C2), we have a balance between precision, recall and F1 which is fairly balanced with in particular a clear improvement in scores of C2.
+
+###### 🔁 3rd iteration
+
+For this third, we decided to upload another dataset which is the one used for the other iterations to which we applied the preprocessing explained in the corresponding part.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/3.1.png" width="230" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/3.2.png" width="250" height="200"/>
+</p>
+
+  - The general accuracy of the model is 60%
+  - Batch size 5 and Epoch 3
+  - This improvement is principally due to the fact that for the value 1 (corresponding to level A2), we obtain scores contrary to the 2nd iteration.
 
 
 
