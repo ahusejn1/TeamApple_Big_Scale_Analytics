@@ -24,7 +24,7 @@ def root():
     difficulty = ''
     if request.method == "POST":
         form_data = request.form.get('textinput')
-        difficulty = predict(form_data, 'projects/1033040566143/locations/eu/operations/TCN4074046822677479424')
+        difficulty = predict(form_data, 'projects/1033040566143/locations/eu/operations/TCN4074046822677479424').payload[0].display_name
         result = difficulty
     return render_template('index.html', result = result, text=form_data)
 
