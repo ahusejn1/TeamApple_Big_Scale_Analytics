@@ -168,6 +168,10 @@ Precision : 82,14% // Recall : 21,1%
 - https://www.telc.net/en/about-telc/news/detail/the-secret-life-of-cognates.html
 - http://alumni.cs.ucr.edu/~mvlachos/pubs/ENIR2011.pdf
 - https://cental.uclouvain.be/cefrlex/flelex
+- https://ledatascientist.com/analyse-de-sentiments-avec-camembert/
+- https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
+- https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
+- https://medium.com/@vitalshchutski/french-nlp-entamez-le-camembert-avec-les-librairies-fast-bert-et-transformers-14e65f84c148
  
 
 ## Criteria Grid for each category
