@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Team Apple - French text classification</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!--		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="8.872.0" data-gr-ext-installed="" style="background-color: #cce3df">
+    <div class="container my-2" align="middle">
+      <div class="row">
+        <div class="col">
+          <h1 style="text-align: center; color: #3f7320;">French Text Level</h1>
+          <hr>
+          <h1>Team Apple</h1>
+
+          <form action="{{ url_for('root')}}" method="POST">
+            <textarea name="textinput" rows="5" cols="120" placeholder="Write something in french here..."></textarea>
+            <br/>
+            <br/>
+            <input type="submit" value="Predict" class="btn btn-primary">
+          </form
+        </div>
+        <p>{{result}}</p>
+        <p>
+        A1:I can understand familiar names, words and very simple sentences, for example in advertisements, posters and catalogs.
+        </p>
+        <p>A2: I can read very simple short texts. I can find specific, predictable information in everyday documents such as small advertisements, leaflets, menus and timetables and I can understand short, simple personal letters.</p>
+        <p>B1: I can understand texts written mainly in everyday or work-related language. I can understand descriptions of events, expressions of feelings and wishes in personal letters.</p>
+        <p>B2: I can read articles and reports on contemporary issues in which the authors adopt a particular attitude or point of view. I can understand contemporary literary prose.</p>
+        <p>C1: I can understand long, complex factual and literary texts and appreciate differences in style. I can understand specialized articles and long technical instructions even when they are not related to my field.</p>
+        <p>C2: I can read effortlessly any kind of text, even abstract or complex in content or form, for example a textbook, a specialized article or a literary work.</p>
+      </div>
+    </div>
+  </body>
+</html>
