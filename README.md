@@ -263,9 +263,11 @@ Evaluation model
 
 Accuracy : 33% // Precision : 50% // Recall : 2%
 
-## AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/brwzrtijgulc12ow1ohb.png" width="25" height="25">
+## Best moodel & AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/brwzrtijgulc12ow1ohb.png" width="25" height="25">
 
 In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the *AIcrowd* results of these models in order to make the final choice of the kept model.
+
+Therefore, our best model is the 3rd iteration of the AutoML model
 
 ## 👨🏻‍💻 Team work repartition
 
