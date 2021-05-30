@@ -71,7 +71,9 @@ To launch the browser and access the web application, you need to enter the foll
 gcloud app browse
 ```
 
-## Milestones
+## Methodoly
+
+### Milestones
 
 In order to be able to lead this project correctly, it was necessary to work it in 3 milestones director:
 
@@ -79,11 +81,68 @@ In order to be able to lead this project correctly, it was necessary to work it 
   2. For this second part of the group project, we decided to use *Google Cloud*. The *Natural Language* module allowed us to upload our database containing French sentences with their respective level in order to be able to apply text classification using *AutoML*. The aim was to link this service to an endpoint which will be able to predict the difficulty of an entry text.
   3. Work on the data (pre-processing, tackle cognates, etc...) find other ways to improve the model.
 
+### Features augmentation
+
+To improve the model we would have to improve the scores where we would base the difficulty levels on some features. For that, we considered the following :
+
+  -	Average difficulty per word: using the french spacy model `fr_core_news_md`, we simply compute the difficulty of each word in a sentence, then do the average of them and put the average word difficulty per sentence. That column is then later used to compute the final score.
+  -	Types of words: with the same model, we also got the type of each word (noun, verb, etc.). We used that in the preprocessing section, where we deleted or modified certain types of words that would unnecessarily give a high difficulty score, for example proper nouns would get the highest score, when in actuality, they are just simple names. We would also delete numbers, which would otherwise also disturb the general difficulty score.
+  -	Average word frequency: using the `wordstats` library, in a similar way, we got the frequency of each word in a sentence, and then compute the average for the sentence. That is then also used in the final computation of the score.
+  -	Readability score: using the `textstat` library, we get the Flesch–Kincaid readability of each sentence. The higher the score, the easier the sentence. The score is also used in the final computation
+  -	Cognates: the final feature is the cognitivity, which we describe in the Cognates section
+
+### Preprocessing
+
+At first we started by using the known spacy modules and tokenizers as the main preprocess tool. Afterwards, we found that it regulated some things that need to be kept the way they are for our case. So we went on to do a manual step by step preprocessing.
+
+As mentioned in the feature augmentation section, we deleted the types of words that give false difficulty scores (proper nouns, numbers). We then removed the punctuation, as we understood that it made a difference when testing the model. 
+
+A last step was removing the one-letter words, as they gave a very high difficulty score unnecessarily. By one-letter words, we mostly mean letters followed by apostrophes, f. Ex. J’ or l’ or m’, that had maximum difficulty scores. 
+
+Other than these, we did not consider any other type of preprocessing, since we would like to keep the sentences that train the model as realistic as possible.
+
+### Cognates
+
+At first, we thought about handling the cognativity problem by exploiting the interlingual homography between a word and its translation, based on the Longest Common Subsequence (LCSS) approach. 
+
+But after further research, we found that this approach can cause some trouble by ignoring the false friends words (words that are similarly written but mean different things). So, we finally decided to take a more brute and simpler but more concrete approach, by creating a very large list of cognates. After that, we added this dataset to the main one with the text and difficulties. The idea is to consider as many cognates as possible that can be found in the main dataset. By merging the two datasets, we would then detect cognates in almost every sentence. 
+
+For us, a cognate in a sentence reduces the sentence’s difficulty. Since cognates are words that are easily understood by non-french speakers, they would help in the general understanding of the sentence and, therefore, reduce the difficulty and thereby the category.
+
+The way we integrate cognates in the computation of the difficulty level is as follows:
+
+We would detect the sentences that contain one or many cognates and display the cognate(s) in a new column. Then we create another column with the number of cognates in each sentence. Finally, we give a weight to the cognates per sentence. The idea is that a cognate will facilitate the understanding of a sentence, so the difficulty level should decrease by a certain amount. That amount is the weight we give to the cognates per sentence (* 0.1). After all that, we add up all the features and then subtract the weighted value of the cognate, which would give us the final new result in numeric value, which we then transform back into categories based on some intervals.
+
+### Standardization
+
+A final and important step for the computation of the difficulty score is the normalization/standardization of the features, which gives a range to the values from 0-1. We standardize the values of the features since the unities and ranges of values vary a lot (f.ex. Readability score : 0-130; average word difficulty: 0-1). Some features (frequency, readability) being negatively correlated with the Score, need to be inversed (1-x), so that it corresponds to the calculations needed.
+
+Finally, after getting the difficulty Score, we standardize it as well, just to have it in more convenient unity for the proportion of the categories
+
+### Final Score computation 
+
+After standardizing the feature values we do the following operation:
+
+```python
+train['Score'] = train['AvgFreqStd'] + train['AvgWordDiffic'] + train['ReadScoreStd'] - train['NumOfCog']
+```
+
+Note: only the cognates are subtracted due to their negative correlation. The rest are regulated in the steps above
+
 ## Predictive models
 
 ### Personnalized model
 
-XXXXXXXXXXXXXXXXXXXXXXXXx
+Here we try a new personal model. The goal of this "personal" model, is to have a more hand-on work and try to adjust parameters manually. That way, we can tune some parameters that can improve the prediction. By transforming the Difficulty levels into numeric values, we can try to compute feature values and through them, compute a new score for each sentence. 
+
+Therefore, we thought of using two different classifiers: Random Forrest and Logistic Regression.
+
+The first iteration serves as a semi-baseline, where we add some basic features, **average word difficulty** and **average word frequency**,  and do some very little preprocessing. There, we used our own collected dataset of 1098 sentences that we manually labeled.
+
+After doing the previous steps, here are the scores of both classifiers:
+
+Random Forrest:	
+
 
 ### *CamemBERT* model
 
