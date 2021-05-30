@@ -162,6 +162,17 @@ For this third, we decided to upload another dataset which is the one used for t
   - This improvement is principally due to the fact that for the value 1 (corresponding to level A2), we obtain scores contrary to the 2nd iteration.
 
 ### *AutoML* model
+
+The 3rd model, we decided to use the tool presented in class, i.e. *AutoML*.
+
+The advantage it has is that it is simple to use. You just have to upload the database and the *Google* service will train and create the model by itself.
+
+However, it does have one negative point. It is not possible to modify the parameters as we wish. 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/3.1.png" width="230" height="150"//>
+</p>
+
 ###### 🔁 1st iteration
 
 We have imported the raw data in *AutoML*, without modification.
