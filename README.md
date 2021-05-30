@@ -267,7 +267,7 @@ Accuracy : 33% // Precision : 50% // Recall : 2%
 
 In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the *AIcrowd* results of these models in order to make the final choice of the kept model.
 
-Therefore, our best model is the <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics/blob/main/README.md#-3rd-iteration-1" target="_blank">**3rd iteration of the _AutoML_ model**</a>
+Therefore, our best model is the <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#-3rd-iteration-1" target="_blank">**3rd iteration of the _AutoML_ model**</a>
 
 
 ## 👨🏻‍💻 Team work repartition
