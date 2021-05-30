@@ -13,9 +13,27 @@ Team members:
 
 ## Table of content
 
-  1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#%EF%B8%8Fproject-description" target="_blank">Project description</a>
-  2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#%EF%B8%8F-web-application" target="_blank">Web Application</a>
-     2.1 <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#how-to-use-them-" target="_blank">How to use them ?</a>
+1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#%EF%B8%8Fproject-description" target="_blank">Project description</a>
+2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#%EF%B8%8F-web-application" target="_blank">Web Application</a>
+    1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#how-to-use-them-" target="_blank">How to use them ?</a>
+    2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#how-does-our-solution-work-" target="_blank">How does our solution work ?</a>
+    3. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#how-to-deploy-it-" target="_blank">How to deploy it ?</a>
+3. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#methodology" target="_blank">Methodology</a>
+    1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#milestones" target="_blank">Milestones</a>
+    2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#features-augmentation" target="_blank">Features augmentation</a>
+    3. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#preprocessing" target="_blank">Prepocessing</a>
+    4. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#cognates" target="_blank">Cognates</a>
+    5. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#standardization" target="_blank">Standardization</a>
+    6. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#final-score-computation" target="_blank">Final score computation</a>
+4. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#predictive-models" target="_blank">Predictive models</a>
+    1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#personnalized-model" target="_blank">Personnalized model</a>
+    2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#camembert-model" target="_blank">CamemBERT model</a>
+    3. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#automl-model" target="_blank">AutoML model</a>
+5. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#best-model--aicrowd-" target="_blank">Best model & AIcrowd</a>
+6. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#-team-work-repartition" target="_blank">Team work repartition</a>
+7. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#relevant-datasets" target="_blank">Relevant datasets</a>
+8. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#-papers-and-articles-on-the-topic" target="_blank">Papers & articles on the topic</a>
+9. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#criteria-grid-for-each-category" target="_blank">Criteria grid for each category</a>
 
 ## 🕵🏻‍♂️Project description
 
@@ -77,7 +95,7 @@ To launch the browser and access the web application, you need to enter the foll
 gcloud app browse
 ```
 
-## Methodoly
+## Methodology
 
 ### Milestones
 
