@@ -11,6 +11,12 @@ Team members:
 - Bleron Ramaj
 - François Grau
 
+## Table of content
+
+  1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#%EF%B8%8Fproject-description" target="_blank">Project description</a>
+  2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#%EF%B8%8F-web-application" target="_blank">Web Application</a>
+     2.1 <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#how-to-use-them-" target="_blank">How to use them ?</a>
+
 ## 🕵🏻‍♂️Project description
 
 You have decided to form a startup called *LingoRank* with two of your University friends and become a millionaire. You have until June to create a proof of concept for your investors. Your startup will revolutionize the way people learn and get better at a foreign language.
