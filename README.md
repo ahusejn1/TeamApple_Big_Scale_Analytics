@@ -103,7 +103,7 @@ Our choice on the model calle *CamemBERT*
 
 ###### Putting the model into practice
 
-As for each model, we therefore decide to do three iterations of the model while trying to improve its precision. However, we faced a complication. Indeed, we have run our pie chart model on *Google Colab*. Our very first iteration, unfortunately, could not be completed, because not having enough resources on *Google Colab*, the model could not finish its run.
+As for each model, we therefore decide to do three iterations of the model while trying to improve its precision. However, we faced a complication considering we have run our model on *Google Colab*. Indeed, our very first iteration, unfortunately, could not be completed, because not having enough resources on *Google Colab*, the model could not finish its run.
 
 Within the models, the difficulty levels have been converted into numbers with the following coresspondence:
 
@@ -131,6 +131,8 @@ Below, we find the result of the first iteration, which consisted in uploading i
 </p>
 
   - The general accuracy of the model is 48%
+  - -Batchsize:16
+  - Epoch:5
   - As we can see, on the summary of the results of precision, recall and F1, it is important to note that for the score 5 which corresponds to level C2, the model is not able to predict data.
   - For level 0 and 2 (A1 and B1), the model is quite goodbecause we can see a balanced balance between precision, recall and F1.
 
@@ -146,6 +148,8 @@ the only element on which we tried to play in order to obtain a better precision
 </p>
 
   - The general accuracy of the model is 59%
+  - Batchsize:5
+  - Epoch:5
   - The results of this iteration shows us that for the value 1 (corresponding to level A2), unfortunately we have no precision, no recall as well as a F1 score of 0. However, for the rest of values (A1, B1, B2, C1, C2), we have a balance between precision, recall and F1 which is fairly balanced with in particular a clear improvement in scores of C2.
 
 ###### 🔁 3rd iteration
@@ -158,7 +162,8 @@ For this third, we decided to upload another dataset which is the one used for t
 </p>
 
   - The general accuracy of the model is 60%
-  - Batch size 5 and Epoch 3
+  - Batch size 5 
+  - Epoch 3
   - This improvement is principally due to the fact that for the value 1 (corresponding to level A2), we obtain scores contrary to the 2nd iteration.
 
 ### *AutoML* model
