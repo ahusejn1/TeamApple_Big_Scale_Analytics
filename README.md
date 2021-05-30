@@ -137,12 +137,91 @@ Here we try a new personal model. The goal of this "personal" model, is to have 
 
 Therefore, we thought of using two different classifiers: Random Forrest and Logistic Regression.
 
+###### 🔁 1st iteration
+
 The first iteration serves as a semi-baseline, where we add some basic features, **average word difficulty** and **average word frequency**,  and do some very little preprocessing. There, we used our own collected dataset of 1098 sentences that we manually labeled.
 
 After doing the previous steps, here are the scores of both classifiers:
 
-Random Forrest:	
+Random Forrest
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/A1.1.png" width="230" height="150"//>
+</p>
 
+Evaluation model
+
+Accuracy = 85% // Precision : 85% // Recall : 84% // F1 score : 84%
+
+Logistic Regression
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/A1.2.png" width="230" height="150"//>
+</p>
+
+Evaluation model
+
+Accuracy = 75% // Precision : 72% // Recall : 73% // F1 score : 68%
+
+Due to the little operations and computations, the RF classifier has a higher overall accuracy than the LR. But overall, the scores are pretty impressive. That changes when using a different dataset.
+
+###### 🔁 2nd iteration
+
+For the second iteration, we use the train dataset provided on AICrowd. We had to reduce the dataset from 4800 sentences to 1200, due to it being too large and messing up the memory. We still keep an equal proportion per Category however (6x200).
+
+Here we do some additional feature adjustments and some more preprocessing. 
+
+The feature we add to this version is the **Readability score**, thanks to the textstat module that can give a readability score to a sentence on its own.
+
+We adjust it to serve our purposes however.
+
+Here are the scores of both classifiers:
+
+Random Forrest
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/A2.1.png" width="230" height="150"//>
+</p>
+
+Evaluation model
+
+Accuracy = 78% // Precision : 77% // Recall : 76% // F1 score : 76%
+
+Logistic Regression
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/A2.2.png" width="230" height="150"//>
+</p>
+
+Evaluation model
+
+Accuracy = 82% // Precision : 83% // Recall : 81% // F1 score : 79%
+
+Considering the many computations and operations, this iteration returns a higher accuracy score for the LR than the RF. The reason might be the features being included a little more in the mathematical computation of the final scores.
+
+###### 🔁 3rd iteration
+
+For our third and final iteration, we do some final and more advanced feature adjustments and some more detailed preprocessing, as explained in the **Feature Augmentation**, **Preprocessing**, and **Cognates** sections. The feature we add to this version is the number of cognates per sentence. The goal is to include the impact that any cognate can have on a sentence. We do that by standardizing the number of cognates per sentence and then giving it a certain weight to use it for the computation of the new Score. 
+
+Here, again, we use a reduced version of the train dataset from AICrowd, only now we load the test dataset also
+
+Random Forrest
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/A3.1.png" width="230" height="150"//>
+</p>
+
+Evaluation model
+
+Accuracy = 75% // Precision : 77% // Recall : 75% // F1 score : 72%
+
+Logistic Regression
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/A3.2.png" width="230" height="150"//>
+</p>
+
+Evaluation model
+
+Accuracy = 77% // Precision : 78% // Recall : 77% // F1 score : 75%
+
+Surprisingly, the last iteration has generally a lower accuracy score than the previous ones, which is a little disappointing. One possible reason might be the fact that we went too far into the preprocessing and inclusion of features. Like we saw last semester, sometimes it is better to keep things a littles simpler. Here also, the LR is slightly better than the RF classifier. The reason might be the same as for the previous iteration.
+
+NOTE: This model can be biased and not too realistic, hence the high scores compared to what we got on AICrowd.
 
 ### *CamemBERT* model
 
