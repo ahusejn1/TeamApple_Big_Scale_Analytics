@@ -240,8 +240,11 @@ Accuracy : 58% // Precision : 82% // Recall : 21%
 
 ###### 🔁 4th Iteration
 
-In our 4th iteration, XXXXXXXXXXXX
+In our 4th iteration, we used an existing dataset from CEFRLex. 
 
+"FLELex is a lexicon for French as a foreign language (FFL) that reports the normalized frequencies of words (lemmas) across each level of the CEFR (Common European Framework of Reference for Languages). The frequencies have been estimated on a corpus of FFL textbooks and FFL simplified readers. More details on the corpus, the computation and normalization of the word frequencies, and the ressource itself can be found in"
+
+*François, T., Gala, N., Watrin, P. & Fairon, C. FLELex: <a href="http://www.lrec-conf.org/proceedings/lrec2014/pdf/1108_Paper.pdf" target="_blank">a graded lexical resource for French foreign learners.</a> In the 9th International Conference on Language Resources and Evaluation (LREC 2014). Reykjavik, Iceland, 26-31 May.*
 
 Then, we imported the data into *AutoML* to build the model. 
 
@@ -258,7 +261,7 @@ Confusion Matrix
 
 Evaluation model
 
-Accuracy : 58% // Precision : 82% // Recall : 21%
+Accuracy : 33% // Precision : 50% // Recall : 2%
 
 ## AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/brwzrtijgulc12ow1ohb.png" width="25" height="25">
 
