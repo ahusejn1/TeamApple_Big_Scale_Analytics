@@ -131,7 +131,7 @@ Below, we find the result of the first iteration, which consisted in uploading i
 </p>
 
   - The general accuracy of the model is 48%
-  - -Batchsize:16
+  - Batchsize:16
   - Epoch:5
   - As we can see, on the summary of the results of precision, recall and F1, it is important to note that for the score 5 which corresponds to level C2, the model is not able to predict data.
   - For level 0 and 2 (A1 and B1), the model is quite goodbecause we can see a balanced balance between precision, recall and F1.
