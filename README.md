@@ -41,7 +41,7 @@ The web application will then return the level of the sentence (example: A1).
 
 We told you, it's very simple 😉😉
 
-### How does our solution works ?
+### How does our solution work ?
 
 Our solution was created with the different tools offered by *Google*, namely *Natural Language* and *App Engine*.
 
@@ -157,7 +157,7 @@ For this third, we decided to upload another dataset which is the one used for t
   - Batch size 5 and Epoch 3
   - This improvement is principally due to the fact that for the value 1 (corresponding to level A2), we obtain scores contrary to the 2nd iteration.
 
-### *AutoML model*
+### *AutoML* model
 ###### 🔁 1st iteration
 
 We have imported the raw data in *AutoML*, without modification.
@@ -175,11 +175,30 @@ Confusion Matrix
  
 Evaluation model
 
-Accuracy : 52% // Precision : 62% // Recall :    28%
+Accuracy: 52% // Precision: 62% // Recall: 28%
 
-###### 🔁 2nd Iteration
+###### 🔁 2nd iteration
 
-In our 2nd iteration, we performed some basic modifications on the raw data. Here are the tasks we did:
+In our 2nd iteration, XXXXXXXXXXXX
+
+Confusion Matrix
+
+|   | A1  | A2  | B1  | B2  | C1  | C2  |
+|---|---|---|---|---|---|---|
+| A1  | 79%  | 11%  | 10%  | -  | - | - |
+| A2  | 26%  | 40%  | 31% | 1% | 1% | -  |
+| B1  | 8%  | 20%  | 50%  | 16%  | 3%  | 4%  |
+| B2  | -  | 1%  | 9%  | 51%  | 18%  | 22%  |
+| C1  | 1%  | -  | 3%  | 30%  | 47%  | 19%  |
+| C2  | -  | 4% | 6%  | 19%  | 20% | 51%  |
+
+Evaluation model
+
+Accuracy: 53% // Precision: 70% // Recall: 22%
+
+###### 🔁 3rd Iteration
+
+In our 3rd iteration, we performed some modifications on the raw data. Here are the tasks we did:
 
  - Transformation of upper case letters into lower case letters
  - Removal of punctuation
@@ -201,7 +220,7 @@ Confusion Matrix
 
 Evaluation model
 
-Precision : 82,14% // Recall : 21,1%
+Accuracy : 58% // Precision : 82% // Recall : 21%
 
 ## AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/brwzrtijgulc12ow1ohb.png" width="25" height="25">
 
