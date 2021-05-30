@@ -279,19 +279,19 @@ Therefore, our best model is the <a href="https://github.com/ahusejn1/TeamApple_
 
 Agon
  - Text cleaning and prepocessing
- - UI dealing
+ - UI developer
  - Personnalized model
  - *ReadMe* contributor
 
 Bleron
  - *Google Auto-ML* manager
- - *App Engine* handling
- - Cognates issue solving
+ - *App Engine* operator
+ - Cognates issue solver
  - *ReadMe* contributor
 
 François
  - Literature research
- - UI builder
+ - UI deployer
  - *CamenBERT* model
  - *ReadMe* contributor
 
