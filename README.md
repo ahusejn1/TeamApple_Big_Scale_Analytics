@@ -71,7 +71,7 @@ Our solution was created with the different tools offered by *Google*, namely *N
 
 *Natural Language* allowed us to train our dataset and build our predictive model. It is also possible to retrieve the API of this module.
 
-Thanks to *App Engine*, it allowed us to make it available to everyone. The <a href="https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service" target="_blank">Google Documentation</a> helped us to create the base of our web application. Our web application is composed of the following files:
+*App Engine* allowed us to make it available to everyone. The <a href="https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service" target="_blank">Google Documentation</a> helped us to create the base of our web application. Our web application is composed of the following files:
 
 -	Main.py
 -	App.yaml
@@ -79,7 +79,7 @@ Thanks to *App Engine*, it allowed us to make it available to everyone. The <a h
 -	*Application* folder containing script.js and style.css
 -	*Templates* folder containing index.html
 
-The *main.py* file contains the *Natural Language* API that links to our prediction.
+The *main.py* file contains the *Natural Language* API that links the API to our prediction.
 
 ### How to deploy it ?
 
@@ -99,7 +99,7 @@ gcloud app browse
 
 ### Milestones
 
-In order to be able to lead this project correctly, it was necessary to work it in 3 milestones director:
+In order to be able to follow an appropriate structure for this project, it was necessary to work on it in 3 milestones :
 
   1. The first step was mostly spent brainstorming, researching and discussing about the approach to take on how to solve the problem. Develop a model of the general objective, collect the necessary data (French sentences with their associated level ranging from A1 to C1).
   2. For this second part of the group project, we decided to use *Google Cloud*. The *Natural Language* module allowed us to upload our database containing French sentences with their respective level in order to be able to apply text classification using *AutoML*. The aim was to link this service to an endpoint which will be able to predict the difficulty of an entry text.
@@ -157,7 +157,7 @@ Note: only the cognates are subtracted due to their negative correlation. The re
 
 ### Personnalized model
 
-Here we try a new personal model. The goal of this "personal" model, is to have a more hand-on work and try to adjust parameters manually. That way, we can tune some parameters that can improve the prediction. By transforming the Difficulty levels into numeric values, we can try to compute feature values and through them, compute a new score for each sentence. 
+We also tried a new personal model. The goal of this "personal" model, is to have a more hand-on work and try to adjust parameters manually. That way, we can tune some parameters that can improve the prediction. By transforming the Difficulty levels into numeric values, we can try to compute feature values and through them, compute a new score for each sentence. 
 
 Therefore, we thought of using two different classifiers: Random Forrest and Logistic Regression.
 
@@ -245,13 +245,13 @@ Accuracy = 77% // Precision : 78% // Recall : 77% // F1 score : 75%
 
 Surprisingly, the last iteration has generally a lower accuracy score than the previous ones, which is a little disappointing. One possible reason might be the fact that we went too far into the preprocessing and inclusion of features. Like we saw last semester, sometimes it is better to keep things a littles simpler. Here also, the LR is slightly better than the RF classifier. The reason might be the same as for the previous iteration.
 
-NOTE: This model can be biased and not too realistic, hence the high scores compared to what we got on AICrowd.
+NOTE: This model can be biased and not very realistic, due to it being too manually made and possibly have two classifiers that are not very much adequate for the task, hence the high scores compared to what we got on AICrowd.
 
 ### *CamemBERT* model
 
-After experimenting with the two previous models, we found it interesting to experiment with a third one, which also represented an opportunity to improve precision.
+After experimenting with the two previous models, we found it interesting to experiment with a third one, which also represented an opportunity to improve the precision.
 
-Our choice on the model calle *CamemBERT*
+Our choice is the model called *CamemBERT*
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/camembert.jpg" width="230" height="150"//>
@@ -259,13 +259,13 @@ Our choice on the model calle *CamemBERT*
 
 ###### Why this choice ?
 
-*CamemBERT* is a tool that allows you to determine, based on written data based on text written in natural language, the feeling it returns. This very used model at first glance makes perfect sense when you know that it is pre-trained on 138GB of French text.
+*CamemBERT* is a tool that allows you to determine, based on  database of text written in natural language, the sentiment it returns. This very used model at first glance makes perfect sense when you know that it is pre-trained on 138GB of French text.
 
-*CamemBERT* chooses the words to be predicted dynamically, that is to stay, not during the pre-processing of the input data, but during forward pass, by randomly masking certain words in a sequence.
+*CamemBERT* chooses the words to be predicted dynamically, meaning not during the pre-processing of the input data, but afterwards by randomly masking certain words in a sequence.
 
 ###### Putting the model into practice
 
-As for each model, we therefore decide to do three iterations of the model while trying to improve its precision. However, we faced a complication considering we have run our model on *Google Colab*. Indeed, our very first iteration, unfortunately, could not be completed, because not having enough resources on *Google Colab*, the model could not finish its run.
+As for each model, we therefore decided to do three iterations of the model while trying to improve its precision. However, we faced a complication considering we have run our model on *Google Colab*. Indeed, our very first iteration, unfortunately, could not be completed, because not having enough resources on *Google Colab*, the model could not finish its run.
 
 Within the models, the difficulty levels have been converted into numbers with the following coresspondence:
 
@@ -276,16 +276,16 @@ Within the models, the difficulty levels have been converted into numbers with t
   - C1 = 4
   - C2 = 5
   
-Finally, it is important to mention that this template contains two parameters to configure which are as follows :
+Finally, it is important to mention that this template contains two parameters to configure which are the following :
 
   - Batch size: number of examples analyzed by the model during an iteration. The larger the batch size, the more memory it consumes.
   - Epoch: expression to say how many times the model should cycle through all the training data. An epoch can contain multiple iterations. The number of iterations depends on the batch size.
 
-For example, let's say we have 2000 training examples that we are going to use. We can divide the dataser of 2000 examples into batches of 500 then it will take 4 iterations to complete 1 epoch.
+For example, let's say we have 2000 training examples that we are going to use. We can divide the dataset of 2000 examples into batches of 500 then it will take 4 iterations to complete 1 epoch.
 
 ###### 🔁 1st iteration
 
-Below, we find the result of the first iteration, which consisted in uploading into the model dataset train provided on AIcrowd of 4800 lines. In order to allow the model to be able to finish its run and obtain these results, we have taken the decision to proportionally reduce (that is to say by increasing the same proportion of data from the different levels) these 4800 lines into 1200 lines.
+Below, we find the result of the first iteration, which consisted in uploading into the model the train dataset  provided on AIcrowd of 4800 lines. In order to allow the model to be able to finish its run and obtain these results, we have taken the decision to proportionally reduce (that is to say by krrping the same proportion of data from the different levels - 6X200) these 4800 lines into 1200 lines.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/1.1.png" width="230" height="150"//>
@@ -300,9 +300,9 @@ Below, we find the result of the first iteration, which consisted in uploading i
 
 ###### 🔁 2nd iteration
 
-This second test consisted of uploading into the model the same dataset train as the first iterations, therefore the dataset of 1200 lines.
+This second test consisted of uploading into the model the same train dataset  as the first iterations, meaning the dataset of 1200 lines.
 
-the only element on which we tried to play in order to obtain a better precision was the Batch size. Indeed, having reduced the size of the dataset by 75%, we said to ourselves that it was justifiable to reduce the size of the Batch as well. We therefore decided to run an iteration with a batch size reduced to 5.
+the only parameter on which we tried to play in order to obtain a better precision was the Batch size. Indeed, having reduced the size of the dataset by 75%, we said to ourselves that it was justifiable to reduce the size of the Batch as well. We therefore decided to run an iteration with a batch size reduced to 5.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/2.1.png" width="230" height="150"//>
@@ -312,11 +312,11 @@ the only element on which we tried to play in order to obtain a better precision
   - The general accuracy of the model is 59%
   - Batchsize:5
   - Epoch:5
-  - The results of this iteration shows us that for the value 1 (corresponding to level A2), unfortunately we have no precision, no recall as well as a F1 score of 0. However, for the rest of values (A1, B1, B2, C1, C2), we have a balance between precision, recall and F1 which is fairly balanced with in particular a clear improvement in scores of C2.
+  - The results of this iteration shows us that for the value 1 (corresponding to level A2), unfortunately we have no precision, no recall as well as a F1 score of 0. However, for the rest of values (A1, B1, B2, C1, C2), we have a balance between precision, recall and F1 which is fairly balanced with a clear improvement in the score of C2.
 
 ###### 🔁 3rd iteration
 
-For this third, we decided to upload another dataset which is the one used for the other iterations to which we applied the preprocessing explained in the corresponding part.
+For this third iteration, we decided to upload another dataset which is the one used for the other iterations to which we applied the preprocessing explained in the corresponding part.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/3.1.png" width="230" height="150"//>
@@ -330,11 +330,11 @@ For this third, we decided to upload another dataset which is the one used for t
 
 ### *AutoML* model
 
-The 3rd model, we decided to use the tool presented in class, i.e. *AutoML*.
+For the 3rd model, we decided to use the tool presented in class, i.e. *AutoML*.
 
 The advantage it has is that it is simple to use. You just have to upload the database and the *Google* service will train and create the model by itself.
 
-However, it does have one negative point. It is not possible to modify the parameters as we wish. 
+However, it does have one negative point: It is not possible to tune the parameters as we wish. 
 
 
 <p align="center">
