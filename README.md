@@ -29,6 +29,7 @@ Team members:
     1. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#personnalized-model" target="_blank">Personnalized model</a>
     2. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#camembert-model" target="_blank">CamemBERT model</a>
     3. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#automl-model" target="_blank">AutoML model</a>
+    4. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#combine-models" target="_blank">Combine models</a>
 5. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#best-model--aicrowd-" target="_blank">Best model & AIcrowd</a>
 6. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#-team-work-repartition" target="_blank">Team work repartition</a>
 7. <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#relevant-datasets" target="_blank">Relevant datasets</a>
