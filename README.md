@@ -59,7 +59,7 @@ It's very simple.
 
 There is a text box below *Write a sentence*, just write a sentence as mentioned (example : Bonjour j'ai 30 ans)
 
-To calculate the level of the sentence, click on *Test*.
+To calculate the level of the sentence, click on *Predict*.
 
 The web application will then return the level of the sentence (example: A1).
 
