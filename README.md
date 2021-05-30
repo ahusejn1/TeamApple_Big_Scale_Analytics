@@ -76,7 +76,7 @@ gcloud app browse
 In order to be able to lead this project correctly, it was necessary to work it in 3 milestones director:
 
   1. The first step was mostly spent brainstorming, researching and discussing about the approach to take on how to solve the problem. Develop a model of the general objective, collect the necessary data (French sentences with their associated level ranging from A1 to C1).
-  2. For this second part of the group project, we decided to use *Google Cloud*. The *Natural Language* module allowed us to upload our database containing Frenc sentences with their respective level in order to be able to apply text classification using *AutoML*. The aim was to link this service to an endpoint which will be able to predict the difficulty of an entry text.
+  2. For this second part of the group project, we decided to use *Google Cloud*. The *Natural Language* module allowed us to upload our database containing French sentences with their respective level in order to be able to apply text classification using *AutoML*. The aim was to link this service to an endpoint which will be able to predict the difficulty of an entry text.
   3. Work on the data (pre-processing, tackle cognates, etc...) find other ways to improve the model.
 
 ## Predictive models
