@@ -1,7 +1,7 @@
 # Big Scale Analytics 2021 - Group Project
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/apple-think-different.png" width="350" height="350"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/apple-think-different.png" width="350" height="350"//>
 </p>
 
 ## Team Apple 
@@ -230,7 +230,7 @@ After experimenting with the two previous models, we found it interesting to exp
 Our choice on the model calle *CamemBERT*
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/camembert.jpg" width="230" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/camembert.jpg" width="230" height="150"//>
 </p>
 
 ###### Why this choice ?
@@ -314,7 +314,7 @@ However, it does have one negative point. It is not possible to modify the param
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/GCP-logo.png" width="280" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/GCP-logo.png" width="280" height="150"//>
 </p>
 
 ###### 🔁 1st iteration
