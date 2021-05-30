@@ -323,6 +323,7 @@ We have imported the raw data in *AutoML*, without modification.
 
 Confusion Matrix
 
+
 |   | A1  | A2  | B1  | B2  | C1  | C2  |
 |---|---|---|---|---|---|---|
 | A1  | 78%  | 11%  | 6%  | 6%  | - | - |
@@ -331,14 +332,18 @@ Confusion Matrix
 | B2  | 6%  | 6%  | 18%  | 29%  | 29%  | 12%  |
 | C1  | 5%  | 16%  | 16%  | 11%  | 37%  | 16%  |
 | C2  | 6%  | - | 6%  | 6%  | - | 81%  |
- 
+  
 Evaluation model
 
 Accuracy: 52% // Precision: 62% // Recall: 28%
 
 ###### 🔁 2nd iteration
 
-In our 2nd iteration, XXXXXXXXXXXX
+In our 2nd iteration, we performed some modifications on the raw data. Here are the tasks we did:
+
+  - Space and tekonizers
+  - Remove punctuations
+  - Remove 1-letter word
 
 Confusion Matrix
 
