@@ -52,7 +52,7 @@ Thanks to *App Engine*, it allowed us to make it available to everyone. The <a h
 -	Main.py
 -	App.yaml
 -	Requirements.txt
--	*Application* folder containing script.js et style.css
+-	*Application* folder containing script.js and style.css
 -	*Templates* folder containing index.html
 
 The *main.py* file contains the *Natural Language* API that links to our prediction.
