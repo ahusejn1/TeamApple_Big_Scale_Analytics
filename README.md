@@ -435,6 +435,10 @@ Evaluation model
 
 Accuracy : 33% // Precision : 50% // Recall : 2%
 
+### Combine models
+
+One thing we also tried, but were not able to get a successful result is the combination of the different models. We build a combined predictive model that would extract the best score out of our models, but the app could not handle it and kept failing, due to the heavy computing. So, the way we decided to combine the models is by reproducing a dataset after each model and upload it to try it with another.
+
 ## Best model & AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/aicrowd.png" width="25" height="25">
 
 In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the *AIcrowd* results of these models in order to make the final choice of the kept model.
