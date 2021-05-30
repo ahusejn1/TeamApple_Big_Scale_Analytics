@@ -441,6 +441,10 @@ In order to evaluate the different models mentioned above and to obtain a neutra
 
 Therefore, our best model is the <a href="https://github.com/ahusejn1/TeamApple_Big_Scale_Analytics#-3rd-iteration-1" target="_blank">**3rd iteration of the _AutoML_ model**</a>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Documentation/best_model.png" width="630" height="325"//>
+</p>
+
 
 ## 👨🏻‍💻 Team work repartition
 
