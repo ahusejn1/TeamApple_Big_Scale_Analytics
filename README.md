@@ -1,7 +1,7 @@
 # Big Scale Analytics 2021 - Group Project
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/apple-think-diff.svg" width="350" height="250"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/apple-think-different.png" width="350" height="350"//>
 </p>
 
 ## Team Apple 
