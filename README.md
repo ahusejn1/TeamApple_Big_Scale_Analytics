@@ -170,7 +170,7 @@ The advantage it has is that it is simple to use. You just have to upload the da
 However, it does have one negative point. It is not possible to modify the parameters as we wish. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/3.1.png" width="230" height="150"//>
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/GCP-logo.png" width="280" height="150"//>
 </p>
 
 ###### 🔁 1st iteration
