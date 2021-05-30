@@ -238,6 +238,28 @@ Evaluation model
 
 Accuracy : 58% // Precision : 82% // Recall : 21%
 
+###### 🔁 4th Iteration
+
+In our 4th iteration, XXXXXXXXXXXX
+
+
+Then, we imported the data into *AutoML* to build the model. 
+
+Confusion Matrix
+
+|   | A1  | A2  | B1  | B2  | C1  | C2  |
+|---|---|---|---|---|---|---|
+| A1  | 18%  | -  | 36%  | -  | 41% | 5% |
+| A2  | 8%  | -  | 40% | 3% | 43% | 6%  |
+| B1  | 4%  | 1%  | 35%  | 3%  | 50%  | 7%  |
+| B2  | 2%  | 1%  | 37%  | 4%  | 49%  | 7%  |
+| C1  | 3%  | -  | 26%  | 1%  | 62%  | 7%  |
+| C2  | 4%  | - | 16%  | 1%  | 60% | 19%  |
+
+Evaluation model
+
+Accuracy : 58% // Precision : 82% // Recall : 21%
+
 ## AIcrowd <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/brwzrtijgulc12ow1ohb.png" width="25" height="25">
 
 In order to evaluate the different models mentioned above and to obtain a neutral level of precision without having modified any parameters, we based ourselves on the *AIcrowd* results of these models in order to make the final choice of the kept model.
