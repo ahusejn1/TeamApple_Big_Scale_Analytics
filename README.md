@@ -91,6 +91,10 @@ After experimenting with the two previous models, we found it interesting to exp
 
 Our choice on the model calle *CamemBERT*
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahusejn1/TeamApple_Big_Scale_Analytics/main/Data/camembert.jpg" width="230" height="150"//>
+</p>
+
 ###### Why this choice ?
 
 *CamemBERT* is a tool that allows you to determine, based on written data based on text written in natural language, the feeling it returns. This very used model at first glance makes perfect sense when you know that it is pre-trained on 138GB of French text.
